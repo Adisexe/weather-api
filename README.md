@@ -1,2 +1,2 @@
 # weather-api
-i need to change this description C:
+Simple weather api created in ReactJS

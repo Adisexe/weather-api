@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins';
+}
+
+.background{
+  position: absolute;
+  background: url('backgroundIMG.jpg');
+  height: 100%;
+  width: 100%;
+}
+
+.main-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 700px;
+  height: 350px;
+  border-radius: 30px;
+  background-color: rgba(88, 88, 88, 0.87);
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SEARCH */
+
+.search-content{
+  display: flex;
+  width: 100%;
+  height: 15%;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input{
+  height: 50%;
+  width: 68%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: gray;
+  color: white;
+  outline: none;
+  margin-right: 10px;
+}
+
+::placeholder{
+  color: white;
+}
+
+.search-button{
+  background: none;
+  outline: none;
+  border: none;
+}
+
+/* MAIN SECTION */
+
+.main-content{
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+}
+
+.left-content{
+  display: flex;
+  width: 32%;
+  height: 100%;
+  margin: 5px;
+  justify-content: center;
+}
+
+.center-content{
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 100%;
+  color: white;
+  margin: 5px;
+}
+
+/* MAIN CONTENT */
+
+.city-name{
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.degrees{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.right-content{
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 100%;
+  justify-content: center;
+  line-height: 25px;
+}
+
+.weather-info{
+  color: rgb(201, 201, 201);
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.weather-info-header{
+  font-size: 20px;
+  color: white;
+}
+
+/* OTHER INFO */
+
+.other-content{
+  display: flex;
+  height: 40%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-item{
+  display: flex;
+  max-height: 100px;
+  margin: 5px;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  line-height: 17px;
+  padding: 8px;
+  border-radius: 15px;
+  width: 110px;
+}
+
+.other-info-header{
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.other-info-description{
+  font-size: 14px;
+  color: rgb(201, 201, 201);
+}
+
+/* NOTIFICATION */
+
+.notification{
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  transform: translate(-50%);
+  background-color: rgb(194, 9, 9);
+  width: 35%;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fade 1s ease-in forwards, fade-out 1s 3s ease-out forwards;
+}
+
+.notification-text{
+  color: white;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
